@@ -1,16 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica , Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
-body, html{
+body,
+html {
     height: 100%;
     width: 100%;
 }
 
-body{
+body {
     background-color: #07090e;
     display: flex;
     justify-content: center;
@@ -19,58 +20,137 @@ body{
 
 }
 
-.principal{
-    background-color:#0e131f;
-    border: 1px solid  #23304c;
+.principal {
+    background-color: #0e131f;
+    border: 1px solid #23304c;
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     border-radius: 20px;
     padding: 30px;
     gap: 20px;
 }
 
-
-.main{
+.desk {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     height: 100%;
 }
 
-.title{
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.title {
     border-radius: 20px;
     border: 1px solid rgba(6, 182, 212, 0.15);
     padding: 5px;
-    color: #38bdf8;;
+    color: #38bdf8;
     background-color: rgba(6, 182, 212, 0.15);
-    font-weight: bold;
+    font-weight:bold;
     margin: 20px;
+
 }
 
-.h1{
+.h1 {
     color: #ffffff;
     text-align: center;
     margin-bottom: 10px;
+    font-weight: 900 ;
 }
 
-.paragrafo{
-    color: #94a3b8;;
+.paragrafo {
+    color: #94a3b8;
+    ;
     margin-bottom: 12px;
     text-align: center;
+    font-size: 20px;
 }
 
-baloes{
-    margin-bottom: 20px
+.baloes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
 }
 
 .balao {
-    border: 1px solid rgba(6, 182, 212, 0.15) ;
-    border-radius: 20px;
-    padding: 5px;
+    display: flex;
+    border: 1px solid rgba(6, 182, 212, 0.15);
+    border-radius: 8px;
+    padding: 6px 12px;
+    background-color: #151d30;
+    align-items: center;
+    gap: 6px;
+    font-size: 17px;
 
+
+}
+
+
+.botao button {
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(135deg, #2563eb, #8b5cf6);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 16px 80px;
+    align-items: center;
+    justify-items: center;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 50px;
+    gap: 2px;
+}
+
+.img img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+
+
+@media (min-width: 768px) {
+    
+    .principal {
+        
+
+        width: 50%;
+    
+    }
+
+    .main {
+        flex-direction: row;
+
+    }
+    
+    .desk {
+        align-items: start;
+    }
+
+    .paragrafo {
+        text-align: left;
+    }
+    .img img{
+        width:300px;
+    }
+    .title {
+        text-align: left;
+        text-align: top;
+    }
+ 
 }
